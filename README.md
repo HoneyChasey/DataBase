@@ -1,5 +1,6 @@
 # How to Create a Database?
-
+#### All the pdf are in the folder src on the main branch
+---
 ## Schema:
 
 <img width="1512" alt="Capture d’écran 2024-09-16 à 18 27 57" src="https://github.com/user-attachments/assets/9b678230-dd02-476d-b31e-831b6676fe23">
