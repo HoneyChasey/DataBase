@@ -2,7 +2,7 @@
 
 ## Schema:
 
-![screenShootSchema](/Capture%20d’écran%202024-09-16%20à%2018.27.57.png)
+[ESSAI-FINASH.pdf](https://github.com/user-attachments/files/17029459/ESSAI-FINASH.pdf)
 
 ___
 
