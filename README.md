@@ -27,10 +27,10 @@ This project is designed as a smaller integration of the French physical store `
 ## Links into the database: 
 1. **user** and **OrderDetail** have one relationship **(1:N)**.
 2. **user** and **cardItem** have one relationship **(1:N)**.
-3. **user** and **etablishment** have one relasionship **(1:N)**.
-4. **user** and **payement** have one relasionship **(1:N)**.
-5. **etablishment** and **boss** have one relastionship **(1:N)**.
-6. **etablishment** and **cashRegister** have two relationship **(2:N)**.
+3. **user** and **establishment** have one relationship **(1:N)**.
+4. **user** and **payment** have one relationship **(1:N)**.
+5. **establishment** and **boss** have one relastionship **(1:N)**.
+6. **establishment** and **cashRegister** have two relationship **(2:N)**.
 7. **cardItem** and **product** have one relationship **(1:N)**.
 
 ---
@@ -113,7 +113,7 @@ CREATE TABLE "user" (
 ```
 Explanation: Each user has a unique ID (IdUser), and fields for first name, last name, email, and phone number. The user's favorite store is linked through a foreign key.
 
-### Creat product OrderDetail 
+### Create product OrderDetail 
 
 ```SQL
 CREATE TABLE "OrderDetail"(
@@ -266,18 +266,18 @@ idCartItem | productId | customerId | quantity
           1 |         1 |          1 |        3
 (1 ligne)
 ```
-#### Add a payement for a command
+#### Add a payment for a command
 ```SQL
 INSERT INTO "payment" ("idPayment", "nameOfSender", "nameOfReceiver", "amount", "customerId", "orderDetailId")
 VALUES (1, 'Alice Smith', 'Intermarché', 4.50, 1, 1);
 ```
 Check command without a specific ID: 
 ```SQL
-SELECT * FROM "payement";
+SELECT * FROM "payment";
 ```
 and check with a specifique ID:
 ```SQL
-SELECT * FROM "payement" WHERE "customerId" = 1;
+SELECT * FROM "payment" WHERE "customerId" = 1;
 ```
 Output:
 ```bash
@@ -287,4 +287,4 @@ Output:
 (1 ligne)
 ```
 
-Same output because I have do not add other payement (only one on the dataBase for now).
+Same output because I have do not add other payment (only one on the dataBase for now).
